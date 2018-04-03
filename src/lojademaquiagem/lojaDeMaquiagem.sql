@@ -24,8 +24,6 @@ create table produto(
     
 create table venda(
     id_venda integer primary key,
-    nome_cliente varchar,
-    nome_funcionario varchar,
     data date,
     hora time,
     valor_venda integer,
