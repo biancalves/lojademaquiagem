@@ -2,11 +2,11 @@
 package lojademaquiagem;
 
 
-public class itemVenda {
+public class ItemVenda {
     private Produto Pro;
     private int quantidadeVenda;
 
-    public itemVenda(Produto Pro, int quantidadeVenda) {
+    public ItemVenda(Produto Pro, int quantidadeVenda) {
         this.Pro = Pro;
         this.quantidadeVenda = quantidadeVenda;
     }

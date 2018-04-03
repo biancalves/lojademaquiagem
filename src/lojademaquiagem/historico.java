@@ -9,6 +9,6 @@ package lojademaquiagem;
  *
  * @author ALUNO
  */
-public class historico {
+public class Historico {
     
 }

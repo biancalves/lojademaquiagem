@@ -4,14 +4,14 @@ package lojademaquiagem;
 import java.util.logging.Logger;
 
 
-public class funcionario {
+public class Funcionario {
     private String nome;
     private String cpf;
     private int codFuncionario;
     private String telefone;
     private String email;
 
-    public funcionario(String nome, String cpf, int codFuncionario, String telefone, String email) {
+    public Funcionario(String nome, String cpf, int codFuncionario, String telefone, String email) {
         this.nome = nome;
         this.cpf = cpf;
         this.codFuncionario = codFuncionario;

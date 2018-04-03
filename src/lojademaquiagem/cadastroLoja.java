@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 import static javax.swing.UIManager.getString;
 
-public class cadastroLoja {
+public class CadastroLoja {
      
     
     public void adicionarCliente(Cliente cli) {
@@ -35,7 +35,7 @@ public class cadastroLoja {
         }
     }
     
-    public void adicionarFuncionario(funcionario func) {
+    public void adicionarFuncionario(Funcionario func) {
         ConnectionPostgreSQL postgres = new ConnectionPostgreSQL();
         PreparedStatement stmt = null;
         Connection conexao = null;
@@ -74,7 +74,7 @@ public class cadastroLoja {
             postgres.close(null, stmt, conexao);
         }
     }
-    public void adicionarVenda(venda v) {
+    public void adicionarVenda(Venda v) {
         ConnectionPostgreSQL postgres = new ConnectionPostgreSQL();
         PreparedStatement stmt = null;
         Connection conexao = null;
@@ -97,7 +97,7 @@ public class cadastroLoja {
             postgres.close(null, stmt, conexao);
         }
     }
-    public void adicionarItemVenda(itemVenda iv) {
+    public void adicionarItemVenda(ItemVenda iv) {
         ConnectionPostgreSQL postgres = new ConnectionPostgreSQL();
         PreparedStatement stmt = null;
         Connection conexao = null;

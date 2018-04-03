@@ -4,19 +4,15 @@ package lojademaquiagem;
 
 public class Produto {
     private int idProduto;
-    private double preco;
+    private int preco;
     private int quantidadeEstoque;
     private String nomeProduto;
 
-    public Produto(int idProduto, double preco, int quantidadeEstoque, String nome) {
+    public Produto(int idProduto, int preco, int quantidadeEstoque, String nome) {
         this.idProduto = idProduto;
         this.preco = preco;
         this.quantidadeEstoque = quantidadeEstoque;
         this.nomeProduto = nome;
-    }
-
-    Produto() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public int getIdProduto() {
@@ -27,11 +23,11 @@ public class Produto {
         this.idProduto = idProduto;
     }
 
-    public double getPreco() {
+    public int getPreco() {
         return preco;
     }
 
-    public void setPreco(double preco) {
+    public void setPreco(int preco) {
         this.preco = preco;
     }
 

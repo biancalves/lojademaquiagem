@@ -18,7 +18,7 @@ public class ConnectionPostgreSQL {
 		this.password = "12345"; 
 	}
 	
-	public Connection getConnection() throws SQLException {
+	public Connection getConection() throws SQLException {
 		Connection con = DriverManager.getConnection(url, user, password);
 		return con;
 	}

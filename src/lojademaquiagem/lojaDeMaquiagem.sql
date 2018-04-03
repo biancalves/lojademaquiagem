@@ -17,7 +17,7 @@ create table funcionario(
     
 create table produto(
     id_produto integer primary key,
-    preco numeric,
+    preço integer,
     quantidade_estoque integer,
     nome_produto varchar
     );

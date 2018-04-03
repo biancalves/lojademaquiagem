@@ -7,24 +7,22 @@ import java.sql.Time;
 import java.util.Date;
 
 
-public class venda {
+public class Venda {
     private int idVenda;
     private Cliente cli;
-    private funcionario Func;
-    private Date data= new Date();
+    private Funcionario Func;
+    private Date data;
     private Time hora;
     private int valorVenda;
-    private int idFuncionario;
-    private String cpfCliente;
 
-    public venda(int idVenda, Cliente cli, funcionario Func, Time hora, int valorVenda, int idFuncionario, String cpfCliente) {
+    public Venda(int idVenda, Cliente cli, Funcionario Func, Date data,
+            Time hora, int valorVenda) {
         this.idVenda = idVenda;
         this.cli = cli;
         this.Func = Func;
+        this.data = data;
         this.hora = hora;
         this.valorVenda = valorVenda;
-        this.idFuncionario = idFuncionario;
-        this.cpfCliente = cpfCliente;
     }
 
     public int getIdVenda() {
@@ -43,11 +41,11 @@ public class venda {
         this.cli = cli;
     }
 
-    public funcionario getFunc() {
+    public Funcionario getFunc() {
         return Func;
     }
 
-    public void setFunc(funcionario Func) {
+    public void setFunc(Funcionario Func) {
         this.Func = Func;
     }
 
@@ -75,30 +73,13 @@ public class venda {
         this.valorVenda = valorVenda;
     }
 
-    public int getIdFuncionario() {
-        return idFuncionario;
-    }
-
-    public void setIdFuncionario(int idFuncionario) {
-        this.idFuncionario = idFuncionario;
-    }
-
-    public String getCpfCliente() {
-        return cpfCliente;
-    }
-
-    public void setCpfCliente(String cpfCliente) {
-        this.cpfCliente = cpfCliente;
-    }
-
     @Override
     public String toString() {
-        return "venda{" + "idVenda=" + idVenda + ", cli=" + cli + ", Func=" + Func + ", data=" + data + ", hora=" + hora + ", valorVenda=" + valorVenda + ", idFuncionario=" + idFuncionario + ", cpfCliente=" + cpfCliente + '}';
+        return "venda{" + "idVenda=" + idVenda
+                + ", cli=" + cli + ", Func=" + Func
+                + ", data=" + data + ", hora=" + hora
+                + ", valorVenda=" + valorVenda + '}';
     }
-
-  
-    
-            
 }
 
 
